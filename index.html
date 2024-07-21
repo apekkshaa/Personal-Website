@@ -722,6 +722,7 @@
           loading.style.display = 'none';
           if (response.ok) {
             sentMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
             form.reset();
           } else {
             response.json().then(data => {
@@ -731,12 +732,14 @@
                 errorMessage.innerText = 'Oops! There was a problem submitting your form';
               }
               errorMessage.style.display = 'block';
+              sentMessage.style.display = 'none';
             });
           }
         }).catch(error => {
           loading.style.display = 'none';
           errorMessage.innerText = 'Oops! There was a problem submitting your form';
           errorMessage.style.display = 'block';
+          sentMessage.style.display = 'none';
         });
       });
     });
