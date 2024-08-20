@@ -29,11 +29,11 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
-  	<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R6LP2CY23"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-3R6LP2CY23');
@@ -66,6 +66,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Experience</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i>Projects</a></li>
+        <li><a href="#testimonials"><i class="bi bi-images navicon"></i>Achievements</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -616,6 +617,99 @@
       </div>
 
     </section><!-- /Portfolio Section -->
+
+    <!-- Honours and Awards -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Achievements</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 500,
+              "autoplay": {
+                "delay": 2000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <span>Chosen as one of the top 80 teams out of more than 20,000 teams competing teams
+                    nationwide
+                    Information Security Track</span>
+                </p>
+                <img src="assets/img/testimonials/flipkart.png" class="testimonial-img" alt="">
+                <h3>Flipkart Grid 6.0</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <span>Chosen as one of the top 3400 teams out of more than 42,000 teams competing teams
+                    nationwide in the IT Challenge</span>
+                </p>
+                <img src="assets/img/testimonials/tvs.png" class="testimonial-img" alt="">
+                <h3>TVS Credit 6.0</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <span>Mentored 50+ open-source contributors across 3 projects, leading to successful
+                    contributions.</span>
+                </p>
+                <img src="assets/img/testimonials/gssoc.png" class="testimonial-img" alt="">
+                <h3>Girlscript Summer of Code'24</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <span>Selected amongst the top 35 teams out of 200+ teams in the Internal round.
+                    Semi-Finalist
+                    2023</span>
+                </p>
+                <img src="assets/img/testimonials/sih.png" class="testimonial-img" alt="">
+                <h3>Smart India Hackathon'23</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
